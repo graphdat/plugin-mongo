@@ -152,8 +152,8 @@ function poll(cb)
         console.log('MONGO_CONNECTION_LIMIT %d %s', usedRatio, _source);
 
         // Global lock ratio
-        var gl_totalTime = current.globalLock.totalTime;
-        var gl_lockTime = current.globalLock.lockTime;
+        var gl_totalTime = current.globalLock.totalTime.$numberLong;
+        var gl_lockTime = current.globalLock.lockTime.$numberLong;
         var global_lock = gl_lockTime / gl_totalTime;
         console.log('MONGO_GLOBAL_LOCK %d %s', global_lock, _source); //percentage
 
