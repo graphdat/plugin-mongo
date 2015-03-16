@@ -117,7 +117,7 @@ timer.setInterval(param.pollInterval, function ()
     end)
     req:on("error", function(err)
         msg = tostring(err)
-        print("Error while sending a request: " .. msg)
+        process.stderr:write("Error while sending a request: " .. msg)
     end)
 
     req:done()
