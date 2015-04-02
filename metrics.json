@@ -1,0 +1,149 @@
+{
+  "result": [
+  {
+    "name": "MONGO_BTREE_ACCESSES",
+    "displayName": "MongoDB Index Accesses",
+    "description": "Number of times that database operations have accessed indexes.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Accesses",
+    "defaultAggregate": "count"
+  },
+  {
+    "name": "MONGO_BTREE_HITS",
+    "displayName": "MongoDB Index Accesses from Memory",
+    "description": "Number of index accesses from memory.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Hits",
+    "defaultAggregate": "count"
+  },
+  {
+    "name": "MONGO_BTREE_MISSES",
+    "displayName": "MongoDB Index Accesses from Store",
+    "description": "Number of index accesses requiring indexes to be loaded.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Misses",
+    "defaultAggregate": "count"
+  },
+  {
+    "name": "MONGO_BTREE_RESETS",
+    "displayName": "MongoDB Index Counter Resets",
+    "description": "Number of times that the index counters were reset.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Resets",
+    "defaultAggregate": "count"
+  },
+  {
+    "name": "MONGO_BTREE_MISS_RATIO",
+    "displayName": "MongoDB Ratio of Index Hits to Index Misses",
+    "description": "Ratio of hits to misses.",
+    "unit": "ratio",
+    "displayNameShort": "MongoDB Miss Ratio",
+    "defaultAggregate": "ratio"
+  },
+  {
+    "name": "MONGO_CONNECTIONS",
+    "displayName": "MongoDB Client Connection Count",
+    "description": "Number of active client connections to the database.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Connections",
+    "defaultAggregate": "count"
+  },
+  {
+    "name": "MONGO_CONNECTIONS_AVAILABLE",
+    "displayName": "MongoDB Client Connection Available",
+    "description": "Number of unused client connections to the database.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Connections Available",
+    "defaultAggregate": "count"
+  },
+  {
+    "name": "MONGO_CONNECTION_LIMIT",
+    "displayName": "MongoDB Client Connection Limit",
+    "description": "Ratio of client connections to total available connections.",
+    "unit": "ratio",
+    "displayNameShort": "MongoDB Connection Limit",
+    "defaultAggregate": "ratio"
+  },
+  {
+    "name": "MONGO_GLOBAL_LOCK",
+    "displayName": "MongoDB Global Lock Ratio",
+    "description": "Ratio of time locked to time running.",
+    "unit": "ratio",
+    "displayNameShort": "MongoDB Lock",
+    "defaultAggregate": "ratio"
+  },
+  {
+    "name": "MONGO_MEM_RESIDENT",
+    "displayName": "MongoDB RAM Usage",
+    "description": "Number of bytes of RAM used.",
+    "unit": "number",
+    "displayNameShort": "MongoDB RAM",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_MEM_VIRTUAL",
+    "displayName": "MongoDB Virtual Memory Usage",
+    "description": "Number of bytes of virtual memory used.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Vmem",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_MEM_MAPPED",
+    "displayName": "MongoDB Mapped Memory Usage",
+    "description": "Number of bytes of mapped memory used.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Mmem",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_OPS_INSERTS",
+    "displayName": "MongoDB Insert Operation Count",
+    "description": "Count of insert operations.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Insert",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_OPS_QUERY",
+    "displayName": "MongoDB Query Operation Count",
+    "description": "Count of query operations.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Querie",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_OPS_UPDATE",
+    "displayName": "MongoDB Update Operation Count",
+    "description": "Count of update operations.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Update",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_OPS_DELETE",
+    "displayName": "MongoDB Delete Operation Count",
+    "description": "Count of delete operations.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Delete",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_OPS_GETMORE",
+    "displayName": "MongoDB GetMore Operation Count",
+    "description": "Count of getmore operations.",
+    "unit": "number",
+    "displayNameShort": "MongoDB GetMore",
+    "defaultAggregate": "number"
+  },
+  {
+    "name": "MONGO_OPS_COMMAND",
+    "displayName": "MongoDB Command Operation Count",
+    "description": "Count of command operations.",
+    "unit": "number",
+    "displayNameShort": "MongoDB Command",
+    "defaultAggregate": "number"
+  }
+  ]
+}
+

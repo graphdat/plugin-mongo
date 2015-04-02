@@ -2,12 +2,16 @@
     "description" : "Displays important mongodb metrics",
     "icon" : "icon.png",
     "command" : "node index.js",
+    "command_lua": "boundary-meter init.lua",
     "postExtract" : "npm install",
+    "postExtract_lua" : "",
     "ignore" : "node_modules",
 
     "metrics" : [
+        "MONGO_BTREE_ACCESSES",
         "MONGO_BTREE_HITS",
         "MONGO_BTREE_MISSES",
+        "MONGO_BTREE_RESETS",
         "MONGO_BTREE_MISS_RATIO",
         "MONGO_CONNECTIONS",
         "MONGO_CONNECTIONS_AVAILABLE",
@@ -58,6 +62,14 @@
             "description" : "(optional) Pasword to access MongoDB",
             "type" : "password"
         },
+        {
+            "title": "Poll Time (sec)",
+            "name": "pollInterval",
+            "description": "The Poll Interval to call the command. Defaults 5 seconds",
+            "type": "string",
+            "default": 5000,
+            "required": false
+       },
         {
             "title" : "Source",
             "name" : "source",
