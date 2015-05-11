@@ -12,16 +12,10 @@ Collects metrics from a MongoDB server instance. MongoDB statistics are pulled v
 
 ##### The statistics are pulled from http://hostname:(port+1000)/_status.  If you did not change the MongoDB default port, we will use 28107.
 
-#### Boundary Meter Versions V4.0 Or Greater
+#### Boundary Meter Versions V4.0 Or Later
 
-To get the new meter:
-
-    curl -fsS \
-        -d "{\"token\":\"<your API token here>\"}" \
-        -H "Content-Type: application/json" \
-        "https://meter.boundary.com/setup_meter" > setup_meter.sh
-    chmod +x setup_meter.sh
-    ./setup_meter.sh
+- To install new meter go to Settings->Installation or [see instructons|https://help.boundary.com/hc/en-us/sections/200634331-Installation]. 
+- To upgrade the meter to the latest version - [see instructons|https://help.boundary.com/hc/en-us/articles/201573102-Upgrading-the-Boundary-Meter].
 
 #### For Boundary Meter less than V4.0
 
